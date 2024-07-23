@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f0ed39c6, #181617b8);
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 2% auto;
+  padding: 20px;
+  background: linear-gradient(to left, #d36d13cf, #484847c2);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.row:hover {
+  transform: scale(1.05);
+}
+
+img {
+  margin-right: 10px;
+  max-width: 50px;
+  /* Ensuring images fit well */
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 15px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  font-weight: 600;
+}
+
+input[type="number"]:focus {
+  border-color: #ff7e5f;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 126, 95, 0.5);
+}
+
+button {
+  background-color: #ff7e5f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6347;
+}
+
+.result-part {
+  margin-top: 20px;
+}
+
+.cash-text {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
